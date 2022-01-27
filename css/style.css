@@ -1,0 +1,483 @@
+:root {
+  --color-dark: #000000;
+  --color-grey-black: #191919;
+  --color-white: #ffffff;
+  --color-red: #91120c;
+  --color-red-blood: #eb453d;
+  --color-blue: #03377a;
+  --color-blue-dark: #032858;
+  --color-secundary: #917758;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+
+/******
+* HOME
+*******/
+
+.home {
+  position: relative;
+  background-image: url(../assets/bg-home.png);
+  background-size: cover;
+  height: 100vh;
+  
+  background-attachment: fixed;
+}
+
+
+.header {
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  
+  width: 100%;
+  
+}
+
+.home .header .nav {
+  display: flex;
+  justify-content: center;
+}
+
+.home .header .nav ul {
+  display: flex;
+ 
+  list-style: none;
+}
+
+.home .header .nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+
+.home .header .nav ul li a{
+  text-decoration: none;
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.home .header .nav ul li a:hover{
+  border-bottom: 1px solid var(--color-red-blood);
+}
+
+.home .header .nav ul li .logo {
+  width: 100px;
+  margin: 0 30px;
+ 
+}
+
+
+
+/**************
+* HOME - BANNER
+***************/
+.home .banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 390px;
+  width: 770px;
+  text-align: center;
+  margin-left: -385px;
+  margin-top: -145px;
+  text-align: center;
+}
+
+.home .banner .span {
+  display: block;
+}
+
+.home .banner .slogan1 {
+  color: var(--color-red-blood);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.home .banner h1 {
+  font-size: 100px;
+  text-shadow: 0 0 20px var(--color-dark);
+}
+
+.home .banner .slogan2 {
+  color: var(--color-blue-dark);
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.home .banner .banner-bigode {
+  display: block;
+  width: 50px;
+  margin: 15px auto;
+}
+
+
+/*********
+*  ABOUT
+*********/
+.about {
+
+  background-color: var(--color-red);
+}
+
+.about .container {
+  display: flex;
+}
+
+.about .timing {
+  position: relative;
+  top: -50px;
+  width: 33%;
+  padding: 20px;
+  background-image: url(../assets/horario.jpg);
+}
+
+
+.about .timing .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about .timing .icon-cut {
+  width: 50px;
+}
+
+.about .timing h3 {
+  color: var(--color-red-blood);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-red-blood);
+  width: fit-content;
+  margin: 0 auto 30px auto;
+  font-size: 30px;
+}
+
+.about .timing .text {
+  margin: 10px 0;
+}
+
+.about .timing .text:after {
+  content: '●';
+  display: block;
+  font-size: 25px;
+  color: var(--color-white);
+  margin-top: 10px;
+}
+
+.about .timing .text:last-of-type:after  {
+  content: '|';
+}
+
+.about .timing .text h4 {
+  color: grey;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.about .timing .text-icon {
+  width: 20px;
+}
+
+.about .timing span {
+  font-size: 15px;
+  display: block;
+}
+
+.about .experience {
+  width: 66%;
+  margin-left: 7%;
+  margin-top: 100px;
+}
+
+.about .experience h2 {
+  font-weight: 400;
+  font-size: 40px;
+  
+}
+
+.about .experience h2:after {
+  display: block;
+  content: ' ';
+  width: 100px;
+  height: 3px;
+  background: var(--color-red-blood);
+  margin: 20px 0;
+}
+
+.about .experience .text {
+  display: flex;
+}
+
+.about .experience .text p {
+  margin-bottom: 20px;
+  font-weight: 100;
+  font-size: 17px;
+}
+
+.about .experience .corte-icon {
+  width: 360px;
+}
+
+
+
+/***********
+*  SERVICES
+***********/
+.services {
+  background-color: var(--color-blue);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.services h2 {
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+
+}
+
+.services .boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.services .box {
+  border: 3px solid var(--color-secundary);
+  box-shadow: 0 0 8px var(--color-white);
+  padding: 50px 40px;
+  margin: 30px;
+}
+
+.services .box h4 {
+  color: var(--color-secundary);
+  margin-top: 30px;
+  
+}
+
+.services .box p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+
+/**************
+*  APPOINTMENT
+***************/
+.appointment {
+  padding: 100px 0;
+  height: 100vh;
+  background-image: url(../assets/barber-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.appointment h2{
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+.appointment img {
+  margin: 0 auto;
+  display: block;
+}
+
+.appointment form {
+  margin-top: 80px;
+}
+
+.appointment .personal-data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.appointment .input-wrapper {
+  width: 100%;
+  margin-right: 50px;
+}
+
+.appointment .input-wrapper:last-of-type {
+  margin-right: 0;
+}
+
+.appointment label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: var(--color-dark);
+}
+
+.appointment .personal-data input,
+.appointment .personal-data select,
+.appointment textarea {
+
+  padding: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 0 0 10px 0;
+}
+
+.appointment textarea {
+  height: 100px;
+}
+
+.appointment button {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  padding: 8px 20px;
+  border: none;
+  margin-top: 10px;
+}
+
+.appointment button:hover {
+  background-color: #141414;
+}
+
+
+/**************
+*  GALLERY
+***************/
+.gallery {
+  padding: 100px 0;
+  background-color: var(--color-dark);
+ 
+  
+  
+}
+
+.gallery h2{
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+.gallery img {
+  margin: 0 auto;
+  display: block;
+}
+
+.gallery .gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 900px;
+  margin: 50px auto;
+
+}
+
+.gallery .gallery-wrapper div {
+  border: 10px solid var(--color-white);
+  margin: 6px;
+  width: 33%;
+}
+
+.gallery .gallery-wrapper div img {
+  width: 100%;
+}
+
+.location {
+  background-image: url(../assets/background-bg.jpg)
+}
+
+
+
+/**************
+*  LOCATION
+***************/
+.location {
+  
+  padding: 100px 0;
+  background: url(../assets/background-bg.jpg);
+  background-size: cover;
+}
+
+.location .head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #191919;
+  padding: 40px;
+  width: 100%;
+}
+
+.location .head .info {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.location .head .info .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  border: 1px solid var(--color-white);
+  border-radius: 100%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.location .head .info .text span {
+  display: block;
+  font-size: 14px;
+}
+
+.location .head .info .text span:first-child {
+  color: silver;
+}
+
+.location .head .info .text span:last-child {
+  color: var(--color-white);
+}
+
+.location .map {
+  width: 100%;
+}
+
+.location .map iframe {
+  width: 100%;
+}
+
+
+/*********
+*  FOOTER
+**********/
+.footer {
+  background-color: var(--color-grey-black);
+  color: var(--color-white);
+  padding: 40px;
+  text-align: center;
+  font-size: 12px;
+}
